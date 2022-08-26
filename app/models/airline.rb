@@ -6,7 +6,8 @@ class Airline < ApplicationRecord
         self.slug = name.parameterize
     end
 
-    def ave_score
+    def avg_score
+        return 0 unless reviews.count.positive?
      reviews.average(:score).round(2).to_f   
     end
 
