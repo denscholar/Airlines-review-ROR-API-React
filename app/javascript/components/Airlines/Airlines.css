@@ -1,0 +1,13 @@
+.header {
+text-align: center;
+margin: 0 auto;
+
+}
+
+.grid-items{
+    display: grid;
+    grid-gap: 10px;
+    /* grid-template-columns: repeat(auto-fill, 20rem); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+
+}
